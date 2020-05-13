@@ -20,15 +20,15 @@ function submitData(name, email){
       return response.json();
     })
     .then(function(object) {
-      let h2 = document.createElement('h2');
-      h2.innerHTML = object.id; 
-      document.body.appendChild(h2);
+      let p1 = document.createElement('p');
+      p1.innerHTML = object.id; 
+      document.body.appendChild(p1);
       console.log(object);
     })
     .catch(function(error) {
-      let h4 = document.createElement('h4');
-      h4.innerHTML = error.message;
-      document.body.appendChild(h4)
+      let p2 = document.createElement('p');
+      p2.innerHTML = error.message;
+      document.body.appendChild(p2)
       console.log(error.message);
     });
 }
